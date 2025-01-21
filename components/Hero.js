@@ -1,0 +1,23 @@
+import Image from "next/image";
+
+export default function Hero({ foto_perfil }) {
+  return (
+    <div id="hero" className="px-4 py-5 my-5 text-center">
+      <div className="row justify-content-center">
+        <div className="d-flex justify-content-between align-itens-center">
+          <div className="text-left">
+            <p className="mb-4 text-hero">
+              Olá 👋,
+              <br /> Me chamo <br />{" "}
+              <span className="name-stylized">Guilherme Sampaio</span> Crio
+              websites <br></br>e projetos pra web em geral
+            </p>
+          </div>
+          <div className="">
+            <Image src={foto_perfil} height={240} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
