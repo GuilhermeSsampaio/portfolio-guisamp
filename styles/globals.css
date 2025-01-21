@@ -79,3 +79,8 @@ body {
   margin: 0 auto;
   font-weight: bold;
 }
+
+.custom-hr {
+  height: 5px; /* Define a espessura da linha */
+  background-color: white; /* Define a cor da linha */
+}

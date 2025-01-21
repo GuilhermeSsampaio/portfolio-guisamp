@@ -15,10 +15,10 @@ export default function TechStack({
   git_icon,
 }) {
   return (
-    <div id="tech-stack" className="tech-stack container text-center mt-5">
+    <div id="tech-stack" className="tech-stack container text-center mt-5 pb-5">
       <h2 className="fs-1">Minha Tech Stack</h2>
       <p className="fs-3">Tecnologias que eu uso no meu dia a dia </p>
-      <div className="icons-tecnologies d-flex flex-wrap justify-content-center align-itens-center">
+      <div className="icons-tecnologies d-flex flex-wrap justify-content-center align-itens-center mt-5 pb-5">
         <div className="col-2 col-2 p-2">
           <Image src={html_icon} height={60} />
         </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import TechStack from "../components/TechStack";
+import About from "../components/About";
 
 export default function Home() {
   const logoGui = require("../public/logo-gui.png");
@@ -36,50 +37,11 @@ export default function Home() {
             icon_linkedin={icon_linkedin}
           />
           <Hero foto_perfil={foto_perfil} />
-          <div className="about container align-text-left">
-            <div className="about-me">
-              <h2 id="sobre" className="title-about">
-                Sobre mim
-              </h2>
-              <p>
-                Sou desenvolvedor web, crio websites, como landing pages, sites
-                customizáveis e sou aberto a projetos inovadores.
-              </p>
-              <p>
-                Por aqui pode ver um pouco do que eu sei fazer e entrar em
-                contato comigo.
-              </p>
-            </div>
-            <div className="about-me container mt-3">
-              <h2 id="sobre" className="title-about">
-                Experiência Profissional
-              </h2>
-              <div className="row d-flex align-itens-center">
-                <div className="col">
-                  <p>Junior Web Developer</p>
-                </div>
-                <div className="col-auto">
-                  <span className=" badger rounded-pill">Estágio</span>
-                </div>
-              </div>
-              <div className="row d-flex align-itens-center">
-                <div className="col d-flex align-items-center">
-                  <Image src={building_icon} height={30} className="me-2" />
-                  <p className="mb-0">Embrapa Agropecúaria Oeste</p>
-                </div>
-                <div className="col d-flex align-items-center">
-                  <Image src={location_icon} height={25} className="me-2" />
-                  <p className="mb-0">Dourados-MS</p>
-                </div>
-                <div className="col-auto">
-                  <div className="col d-flex align-items-center">
-                    <Image src={calendar_icon} height={20} className="me-2" />
-                    <p className="mb-0">Maio 2023 - Maio 2025</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <About
+            building_icon={building_icon}
+            location_icon={location_icon}
+            calendar_icon={calendar_icon}
+          />
           <TechStack
             html_icon={html_icon}
             css_icon={css_icon}

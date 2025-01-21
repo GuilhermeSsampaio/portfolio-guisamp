@@ -14,7 +14,7 @@ export default function Hero({ foto_perfil }) {
             </p>
           </div>
           <div className="">
-            <Image src={foto_perfil} height={240} />
+            <Image src={foto_perfil} height={260} />
           </div>
         </div>
       </div>
