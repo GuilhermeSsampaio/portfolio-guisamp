@@ -8,6 +8,14 @@
   --color-badge-text: #018c0f;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .background {
   background-color: var(--body-background-color);
 }

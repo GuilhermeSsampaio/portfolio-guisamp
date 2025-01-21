@@ -4,8 +4,8 @@ export default function Hero({ foto_perfil }) {
   return (
     <div id="hero" className="px-4 py-5 my-5 text-center">
       <div className="row justify-content-center">
-        <div className="d-flex justify-content-between align-itens-center">
-          <div className="text-left">
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div className="text-left mb-4 mb-md-0">
             <p className="mb-4 text-hero">
               Olá 👋,
               <br /> Me chamo <br />{" "}
