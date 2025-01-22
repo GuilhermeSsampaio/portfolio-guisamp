@@ -7,7 +7,7 @@ export default function Header({
   icon_linkedin,
 }) {
   return (
-    <header className="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 mb-4">
+    <header className="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 mb-4 header">
       <div className="text-center text-md-start mb-2 mb-md-0">
         <a
           href="/"
