@@ -7,17 +7,17 @@ export default function Header({
   icon_linkedin,
 }) {
   return (
-    <header className="d-flex flex-column flex-wrap justify-content-center py-3 mb-4 align-itens-center">
-      <div className="text-center mb-2">
+    <header className="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 mb-4">
+      <div className="text-center text-md-start mb-2 mb-md-0">
         <a
           href="/"
-          className="d-flex justify-content-center link-body-emphasis text-decoration-none"
+          className="d-flex justify-content-center justify-content-md-start link-body-emphasis text-decoration-none"
         >
           <Image src={logoGui} height={80} />
         </a>
       </div>
 
-      <ul className="nav nav-pills pt-3 links-header flex-column flex-md-row">
+      <ul className="nav nav-pills pt-3 pt-md-0 links-header flex-column flex-md-row">
         <li className="nav-item">
           <a
             href="#hero"
