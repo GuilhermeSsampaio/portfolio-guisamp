@@ -89,7 +89,7 @@ body {
 }
 
 .custom-hr {
-  height: 5px; /* Define a espessura da linha */
+  height: 3px; /* Define a espessura da linha */
   background-color: white; /* Define a cor da linha */
 }
 
@@ -116,4 +116,8 @@ body {
   padding: 1rem;
   padding-bottom: 2vh;
   margin-bottom: 1vh;
+}
+
+.footer {
+  color: white;
 }

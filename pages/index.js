@@ -3,7 +3,9 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import TechStack from "../components/TechStack";
 import About from "../components/About";
-import ProjectCard from "../components/ProjectCard"; // Importar o novo componente
+import ProjectCard from "../components/ProjectCard";
+import Contact from "../components/Contact"; // Importar o novo componente
+import Footer from "../components/Footer";
 
 export default function Home() {
   const logoGui = require("../public/logo-gui.png");
@@ -119,12 +121,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container text-center contato-div">
-          <h2 className="contato">Entre em contato</h2>
-          <a className="name-stylized fs-1">Linkedin</a>
-          <br></br>
-          <a className="name-stylized fs-1">Gmail</a>
-        </div>
+        <Contact />
+        <Footer
+          logoGui={logoGui}
+          icon_github={icon_github}
+          icon_insta={icon_insta}
+          icon_linkedin={icon_linkedin}
+        />
       </div>
     </>
   );
