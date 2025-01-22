@@ -53,15 +53,15 @@ export default function About({ building_icon, location_icon, calendar_icon }) {
         <h2 id="sobre" className="title-about">
           Educação
         </h2>
-        <div className="row d-flex align-itens-center">
+        <div className="row d-flex align-items-center">
           <div className="col">
-            <p>Bacharelado em Sistemas De Informação</p>
+            <p className="mb-4">Bacharelado em Sistemas De Informação</p>
           </div>
-          <div className="col-auto">
-            <span className=" badger rounded-pill">Universidade</span>
+          <div className="col-auto mb-4">
+            <span className="badger rounded-pill">Universidade</span>
           </div>
         </div>
-        <div className="row d-flex align-itens-center">
+        <div className="row d-flex align-items-center">
           <div className="col d-flex align-items-center">
             <Image src={building_icon} height={30} className="me-2" />
             <p className="mb-0">
@@ -72,11 +72,9 @@ export default function About({ building_icon, location_icon, calendar_icon }) {
             <Image src={location_icon} height={25} className="me-2" />
             <p className="mb-0">Dourados-MS</p>
           </div>
-          <div className="col-auto">
-            <div className="col d-flex align-items-center">
-              <Image src={calendar_icon} height={20} className="me-2" />
-              <p className="mb-0">Maio 2023 - Dezembro 2026</p>
-            </div>
+          <div className="col d-flex align-items-center">
+            <Image src={calendar_icon} height={20} className="me-2" />
+            <p className="mb-0">Maio 2023 - Dezembro 2026</p>
           </div>
         </div>
       </div>
@@ -84,15 +82,15 @@ export default function About({ building_icon, location_icon, calendar_icon }) {
         <div className="mb-2">
           <hr></hr>
         </div>
-        <div className="row d-flex align-itens-center">
+        <div className="row d-flex align-items-center">
           <div className="col">
-            <p>Técnico em Informática para Internet</p>
+            <p className="mb-4">Técnico em Informática para Internet</p>
           </div>
-          <div className="col-auto">
-            <span className=" badger rounded-pill">Ensino Técnico</span>
+          <div className="col-auto mb-4">
+            <span className="badger rounded-pill">Ensino Técnico</span>
           </div>
         </div>
-        <div className="row d-flex align-itens-center">
+        <div className="row d-flex align-items-center">
           <div className="col d-flex align-items-center">
             <Image src={building_icon} height={30} className="me-2" />
             <p className="mb-0">
@@ -103,11 +101,9 @@ export default function About({ building_icon, location_icon, calendar_icon }) {
             <Image src={location_icon} height={25} className="me-2" />
             <p className="mb-0">Dourados-MS</p>
           </div>
-          <div className="col-auto">
-            <div className="col d-flex align-items-center">
-              <Image src={calendar_icon} height={20} className="me-2" />
-              <p className="mb-0">Março 2020 - Dezembro 2022</p>
-            </div>
+          <div className="col d-flex align-items-center">
+            <Image src={calendar_icon} height={20} className="me-2" />
+            <p className="mb-0">Março 2020 - Dezembro 2022</p>
           </div>
         </div>
         <div className="mb-5">

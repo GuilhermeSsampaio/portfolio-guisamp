@@ -65,9 +65,9 @@ export default function Home() {
 
   return (
     <>
-      <head>
+      {/* <head>
         <title>Guilherme Sampaio</title>
-      </head>
+      </head> */}
       <div className="background container-fluid">
         <div className="container align-itens-center">
           <Header
@@ -97,14 +97,17 @@ export default function Home() {
             git_icon={git_icon}
           />
 
-          <div id="projetos" className="container">
+          <div id="projetos" className="container justify-content-center">
             <div>
               <h2 className="title-about">Projetos</h2>
               <p className="about">Coisas que eu fiz por aí</p>
             </div>
-            <div className="cards row pb-5">
+            <div className="cards row pb-5 justify-content-center">
               {projects.map((project, index) => (
-                <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
+                <div
+                  key={index}
+                  className="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 p-2"
+                >
                   <ProjectCard
                     key={index}
                     imgSrc={project.imgSrc}

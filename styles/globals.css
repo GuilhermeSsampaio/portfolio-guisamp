@@ -121,3 +121,43 @@ body {
 .footer {
   color: white;
 }
+
+@media (max-width: 768px) {
+  .links-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-link-header img {
+    height: 1.2rem;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+
+  .text-hero {
+    font-size: 2rem;
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .name-stylized {
+    font-size: 2.2rem;
+  }
+
+  .title-about {
+    color: #42446e;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .teste {
+    margin-right: 10vw;
+  }
+
+  .col-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

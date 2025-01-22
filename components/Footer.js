@@ -10,13 +10,18 @@ export default function Footer({
     <>
       <div className="container footer d-flex justify-content-between align-items-center">
         <div className="footer-logo">
-          <Image src={logoGui} alt="Logo" />
+          <Image src={logoGui} alt="Logo" height={50} />
         </div>
         <div className="footer-email d-flex align-items-center">
           <p className="mb-0 mx-2">guilhermessampaio20@gmail.com</p>
           <ul className="list-inline mb-0 ml-3">
             <li className="list-inline-item">
-              <a href="#" className="nav-link">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/GuilhermeSsampaio"
+                className="nav-link"
+              >
                 <Image src={icon_github} alt="GitHub" />
               </a>
             </li>
@@ -26,7 +31,12 @@ export default function Footer({
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#" className="nav-link">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/guilhermessampaio/"
+                className="nav-link"
+              >
                 <Image src={icon_linkedin} alt="LinkedIn" />
               </a>
             </li>
