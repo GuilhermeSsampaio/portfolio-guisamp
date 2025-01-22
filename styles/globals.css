@@ -92,3 +92,28 @@ body {
   height: 5px; /* Define a espessura da linha */
   background-color: white; /* Define a cor da linha */
 }
+
+.cards {
+  font-family: var(--font-family);
+  font-size: 1rem;
+}
+
+.stack {
+  color: #42446e;
+  font-weight: bold;
+}
+
+.link-black {
+  color: black !important;
+}
+
+.contato {
+  color: #1e0e62;
+  font-weight: bold;
+}
+
+.contato-div {
+  padding: 1rem;
+  padding-bottom: 2vh;
+  margin-bottom: 1vh;
+}

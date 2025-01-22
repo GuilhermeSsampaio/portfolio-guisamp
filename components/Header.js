@@ -18,7 +18,7 @@ export default function Header({
 
       <ul className="nav nav-pills pt-3 links-header">
         <li className="nav-item">
-          <a href="#" className="text-link-header " aria-current="page">
+          <a href="#hero" className="text-link-header " aria-current="page">
             Home
           </a>
         </li>
