@@ -6,6 +6,7 @@ import About from "../components/About";
 import ProjectCard from "../components/ProjectCard";
 import Contact from "../components/Contact"; // Importar o novo componente
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function Home() {
   const logoGui = require("../public/logo-gui.png");
@@ -65,9 +66,10 @@ export default function Home() {
 
   return (
     <>
-      {/* <head>
+      <Head>
         <title>Guilherme Sampaio</title>
-      </head> */}
+        <link rel="icon" href="/logo-gui.png"></link>
+      </Head>
       <div className="background container-fluid">
         <div className="container align-itens-center">
           <Header
