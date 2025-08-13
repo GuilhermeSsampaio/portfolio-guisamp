@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import TechStack from "../components/TechStack";
 import About from "../components/About";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCarousel from "../components/ProjectCarousel";
 import Contact from "../components/Contact"; // Importar o novo componente
 import Footer from "../components/Footer";
 import Head from "next/head";
@@ -32,37 +32,7 @@ export default function Home() {
   const chain_icon = require("../public/link-chain.png");
   const github_card = require("../public/github-card.png");
 
-  const projects = [
-    {
-      imgSrc: "/logo-tecnofam.png",
-      title: "Tecnofam App",
-      description:
-        "Cartilha da agricultura familiar desenvolvida em conjunto com a Embrapa, que consome dados de uma API feita com Strapi JS. Desenvolvido em colaboração com Pedro Mota.",
-      techStack: "HTML, CSS, Javascript, Nextjs, StrapiJs, Docker",
-      viewLink: "https://tecnofamapp.cpao.embrapa.br/home",
-      codeLink: "#",
-    },
-    {
-      imgSrc: "/logo-tecnofam.png",
-      title:
-        "BOAS PRÁTICAS PARA INTEGRAÇÃO HARMÔNICA ENTRE APICULTURA E SOJICULTURA",
-      description:
-        "Cartilha com conteúdo sobre boas práticas desenvolvida em conjunto com a Embrapa, que consome dados de uma API feita com Strapi JS. Desenvolvido em colaboração com Pedro Mota.",
-      techStack: "HTML, CSS, Javascript, Nextjs, StrapiJs, Docker",
-      viewLink: "https://bpapisoja.cpao.embrapa.br/",
-      codeLink: "#",
-    },
-    {
-      imgSrc: "/logo-tecnofam.png",
-      title:
-        "Manual de Identificação de Insetos e outros Invertebrados da Cultura da Soja",
-      description:
-        "Cartilha da identificação de pragas na soja desenvolvida em conjunto com a Embrapa, que consome dados de uma API feita com Strapi JS. Desenvolvido em colaboração com Pedro Mota.",
-      techStack: "HTML, CSS, Javascript, Nextjs, StrapiJs, Docker",
-      viewLink: "https://tecnofamapp.cpao.embrapa.br/home",
-      codeLink: "#",
-    },
-  ];
+  // Os dados dos projetos agora ficam no ProjectCarousel.js
 
   return (
     <>
@@ -104,25 +74,8 @@ export default function Home() {
               <h2 className="title-about">Projetos</h2>
               <p className="about">Coisas que eu fiz por aí</p>
             </div>
-            <div className="cards row pb-5 justify-content-center">
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 p-2"
-                >
-                  <ProjectCard
-                    key={index}
-                    imgSrc={project.imgSrc}
-                    title={project.title}
-                    description={project.description}
-                    techStack={project.techStack}
-                    viewLink={project.viewLink}
-                    codeLink={project.codeLink}
-                    chain_icon={chain_icon}
-                    github_card={github_card}
-                  />
-                </div>
-              ))}
+            <div className="pb-5">
+              <ProjectCarousel />
             </div>
           </div>
         </div>

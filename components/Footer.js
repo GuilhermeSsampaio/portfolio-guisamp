@@ -8,13 +8,15 @@ export default function Footer({
 }) {
   return (
     <>
-      <div className="container footer d-flex justify-content-between align-items-center">
-        <div className="footer-logo">
-          <Image src={logoGui} alt="Logo" height={50} />
+      <div className="container footer d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+        <div className="footer-logo mb-3 mb-md-0">
+          <Image src={logoGui} alt="Logo" height={106} />
         </div>
-        <div className="footer-email d-flex align-items-center">
-          <p className="mb-0 mx-2">guilhermessampaio20@gmail.com</p>
-          <ul className="list-inline mb-0 ml-3">
+        <div className="footer-email-icons d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+          <p className="mb-2 mb-md-0 mx-md-3 text-center text-md-start">
+            guilhermessampaio20@gmail.com
+          </p>
+          <ul className="list-inline mb-0 d-flex gap-3 justify-content-center">
             <li className="list-inline-item">
               <a
                 target="_blank"
@@ -22,12 +24,18 @@ export default function Footer({
                 href="https://github.com/GuilhermeSsampaio"
                 className="nav-link"
               >
-                <Image src={icon_github} alt="GitHub" />
+                <i
+                  className="bi bi-github"
+                  style={{ fontSize: "2rem", color: "white" }}
+                ></i>
               </a>
             </li>
             <li className="list-inline-item">
               <a href="#" className="nav-link">
-                <Image src={icon_insta} alt="Instagram" />
+                <i
+                  className="bi bi-instagram"
+                  style={{ fontSize: "2rem", color: "white" }}
+                ></i>
               </a>
             </li>
             <li className="list-inline-item">
@@ -37,7 +45,10 @@ export default function Footer({
                 href="https://www.linkedin.com/in/guilhermessampaio/"
                 className="nav-link"
               >
-                <Image src={icon_linkedin} alt="LinkedIn" />
+                <i
+                  className="bi bi-linkedin"
+                  style={{ fontSize: "2rem", color: "white" }}
+                ></i>
               </a>
             </li>
           </ul>

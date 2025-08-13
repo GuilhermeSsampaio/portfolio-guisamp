@@ -1,6 +1,6 @@
 :root {
   --body-background-color: #191919;
-  --text-color-header: #a7a7a7;
+  --text-color-header: #fff;
   --gradient-heading-primary: #13b0f5;
   --gradient-heading-secundary: #0fe75e;
   --font-family: "Courier New", Courier, monospace;
@@ -90,7 +90,7 @@ body {
 }
 
 .title-about {
-  color: #42446e;
+  color: #11b894;
   font-weight: bold;
   font-size: 3rem;
 }
@@ -140,6 +140,19 @@ body {
 .footer {
   color: white;
 }
+/* Efeito neon nos títulos ao passar o mouse */
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+.nav-item:hover {
+  color: #13b0f5;
+  text-shadow: 0 0 8px #13b0f5, 0 0 16px #0fe75e, 0 0 24px #13b0f5,
+    0 0 32px #0fe75e;
+  transition: color 0.2s, text-shadow 0.2s;
+}
 
 @media (max-width: 768px) {
   .links-header {
@@ -178,5 +191,166 @@ body {
   .col-12 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+/* Carrossel circular para tech stack no mobile */
+.techstack-circle-carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.techstack-circle-carousel .circle {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: rotateCircle 12s linear infinite;
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.techstack-circle-carousel .icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Distribui os ícones em círculo */
+.techstack-circle-carousel .icon:nth-child(1) {
+  transform: rotate(0deg) translate(120px) rotate(0deg);
+}
+.techstack-circle-carousel .icon:nth-child(2) {
+  transform: rotate(30deg) translate(120px) rotate(-30deg);
+}
+.techstack-circle-carousel .icon:nth-child(3) {
+  transform: rotate(60deg) translate(120px) rotate(-60deg);
+}
+.techstack-circle-carousel .icon:nth-child(4) {
+  transform: rotate(90deg) translate(120px) rotate(-90deg);
+}
+.techstack-circle-carousel .icon:nth-child(5) {
+  transform: rotate(120deg) translate(120px) rotate(-120deg);
+}
+.techstack-circle-carousel .icon:nth-child(6) {
+  transform: rotate(150deg) translate(120px) rotate(-150deg);
+}
+.techstack-circle-carousel .icon:nth-child(7) {
+  transform: rotate(180deg) translate(120px) rotate(-180deg);
+}
+.techstack-circle-carousel .icon:nth-child(8) {
+  transform: rotate(210deg) translate(120px) rotate(-210deg);
+}
+.techstack-circle-carousel .icon:nth-child(9) {
+  transform: rotate(240deg) translate(120px) rotate(-240deg);
+}
+.techstack-circle-carousel .icon:nth-child(10) {
+  transform: rotate(270deg) translate(120px) rotate(-270deg);
+}
+.techstack-circle-carousel .icon:nth-child(11) {
+  transform: rotate(300deg) translate(120px) rotate(-300deg);
+}
+.techstack-circle-carousel .icon:nth-child(12) {
+  transform: rotate(330deg) translate(120px) rotate(-330deg);
+}
+
+@media (min-width: 768px) {
+  .techstack-circle-carousel {
+    display: none;
+  }
+}
+
+/* Carrossel horizontal duplo para tech stack em telas grandes - otimizado */
+.techstack-horizontal-carousel {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  position: relative;
+}
+
+.techstack-horizontal-carousel .carousel-row {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+
+.techstack-horizontal-carousel .carousel-shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  pointer-events: none;
+  z-index: 2;
+}
+.techstack-horizontal-carousel .carousel-shadow.left {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(25, 25, 25, 0.9) 70%,
+    rgba(25, 25, 25, 0)
+  );
+}
+.techstack-horizontal-carousel .carousel-shadow.right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(25, 25, 25, 0.9) 70%,
+    rgba(25, 25, 25, 0)
+  );
+}
+
+.techstack-horizontal-carousel .top-row {
+  animation: slideRightX 18s linear infinite;
+}
+.techstack-horizontal-carousel .bottom-row {
+  animation: slideLeftX 18s linear infinite;
+}
+
+@keyframes slideRightX {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(30%);
+  }
+}
+@keyframes slideLeftX {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+@media (max-width: 767px) {
+  .techstack-horizontal-carousel {
+    display: none;
   }
 }
